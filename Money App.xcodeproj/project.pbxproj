@@ -14,6 +14,11 @@
 		1067A0D824B4AF4A007E54AC /* Money_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1067A0D624B4AF4A007E54AC /* Money_App.xcdatamodeld */; };
 		1067A0DA24B4AF4F007E54AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1067A0D924B4AF4F007E54AC /* Assets.xcassets */; };
 		1067A0DD24B4AF4F007E54AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1067A0DB24B4AF4F007E54AC /* LaunchScreen.storyboard */; };
+		1067A0E524B4B048007E54AC /* NewPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1067A0E424B4B048007E54AC /* NewPaymentViewController.swift */; };
+		1067A0E724B4B067007E54AC /* TransactionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1067A0E624B4B067007E54AC /* TransactionDetailViewController.swift */; };
+		1067A0E924B4B089007E54AC /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1067A0E824B4B089007E54AC /* TransactionTableViewCell.swift */; };
+		1067A0EB24B4B0A2007E54AC /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1067A0EA24B4B0A2007E54AC /* Transaction.swift */; };
+		1067A0ED24B4B0B6007E54AC /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1067A0EC24B4B0B6007E54AC /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		1067A0D924B4AF4F007E54AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1067A0DC24B4AF4F007E54AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1067A0DE24B4AF4F007E54AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1067A0E424B4B048007E54AC /* NewPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPaymentViewController.swift; sourceTree = "<group>"; };
+		1067A0E624B4B067007E54AC /* TransactionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewController.swift; sourceTree = "<group>"; };
+		1067A0E824B4B089007E54AC /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		1067A0EA24B4B0A2007E54AC /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		1067A0EC24B4B0B6007E54AC /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +70,43 @@
 			children = (
 				1067A0CD24B4AF4A007E54AC /* AppDelegate.swift */,
 				1067A0CF24B4AF4A007E54AC /* SceneDelegate.swift */,
-				1067A0D124B4AF4A007E54AC /* ViewController.swift */,
-				1067A0D324B4AF4A007E54AC /* Main.storyboard */,
+				1067A0EC24B4B0B6007E54AC /* Date.swift */,
+				1067A0EF24B4B0E1007E54AC /* Model */,
+				1067A0F024B4B0F6007E54AC /* View */,
+				1067A0EE24B4B0C2007E54AC /* View Controllers */,
 				1067A0D924B4AF4F007E54AC /* Assets.xcassets */,
-				1067A0DB24B4AF4F007E54AC /* LaunchScreen.storyboard */,
 				1067A0DE24B4AF4F007E54AC /* Info.plist */,
-				1067A0D624B4AF4A007E54AC /* Money_App.xcdatamodeld */,
 			);
 			path = "Money App";
+			sourceTree = "<group>";
+		};
+		1067A0EE24B4B0C2007E54AC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1067A0D124B4AF4A007E54AC /* ViewController.swift */,
+				1067A0E424B4B048007E54AC /* NewPaymentViewController.swift */,
+				1067A0E624B4B067007E54AC /* TransactionDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1067A0EF24B4B0E1007E54AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1067A0EA24B4B0A2007E54AC /* Transaction.swift */,
+				1067A0D624B4AF4A007E54AC /* Money_App.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1067A0F024B4B0F6007E54AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1067A0E824B4B089007E54AC /* TransactionTableViewCell.swift */,
+				1067A0D324B4AF4A007E54AC /* Main.storyboard */,
+				1067A0DB24B4AF4F007E54AC /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1067A0E524B4B048007E54AC /* NewPaymentViewController.swift in Sources */,
+				1067A0E924B4B089007E54AC /* TransactionTableViewCell.swift in Sources */,
+				1067A0EB24B4B0A2007E54AC /* Transaction.swift in Sources */,
 				1067A0D224B4AF4A007E54AC /* ViewController.swift in Sources */,
 				1067A0CE24B4AF4A007E54AC /* AppDelegate.swift in Sources */,
 				1067A0D824B4AF4A007E54AC /* Money_App.xcdatamodeld in Sources */,
+				1067A0E724B4B067007E54AC /* TransactionDetailViewController.swift in Sources */,
+				1067A0ED24B4B0B6007E54AC /* Date.swift in Sources */,
 				1067A0D024B4AF4A007E54AC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,7 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-vyshnevskyi.Money-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,7 +360,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-vyshnevskyi.Money-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
